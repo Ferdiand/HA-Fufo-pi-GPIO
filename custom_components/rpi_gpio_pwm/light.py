@@ -4,7 +4,7 @@ from __future__ import annotations
 import logging
 
 from gpiozero import PWMLED
-from gpiozero.pins.pigpio import PiGPIOFactory
+#from gpiozero.pins.pigpio import PiGPIOFactory
 
 import voluptuous as vol
 
@@ -67,7 +67,7 @@ def setup_platform(
         opt_args = {}
         if CONF_FREQUENCY in led_conf:
             opt_args["frequency"] = led_conf[CONF_FREQUENCY]
-        opt_args["pin_factory"] = PiGPIOFactory(host=led_conf[CONF_HOST], port= led_conf[CONF_PORT])
+        #opt_args["pin_factory"] = PiGPIOFactory(host=led_conf[CONF_HOST], port= led_conf[CONF_PORT])
         if CONF_UNIQUE_ID in led_conf:
             led = PwmSimpleLed(PWMLED(pin, **opt_args), led_conf[CONF_NAME], led_conf[CONF_UNIQUE_ID])
         else:

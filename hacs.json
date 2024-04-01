@@ -1,6 +1,6 @@
 {
-  "name": "Raspberry Pi GPIO PWM",
-  "filename": "rpi_gpio_pwm.zip",
+  "name": "Fufo Pi GPIO",
+  "filename": "fufopi_gpio.zip",
   "hide_default_branch": true,
   "homeassistant": "2024.2.1",
   "render_readme": true,
